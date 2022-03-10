@@ -4,8 +4,8 @@ from selenium import webdriver
 
 @pytest.fixture(scope='function')
 def br():
-    print('\nstart browser...')
+    print('\nstart browser for test...')
     br = webdriver.Chrome()
     yield br
-    print('\nquit browser...')
+    print('\nquit browser for test...')
     br.quit()
